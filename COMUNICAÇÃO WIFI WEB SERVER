@@ -1,9 +1,9 @@
 #include <WiFi.h>  // Biblioteca para comunicação Wi-Fi
 
-#define PIN 18  // Definição do pino que será usado para controle
+#define PIN 2  // Definição do pino que será usado para controle
 
-const char* ssid = "SEU_SSID";  // Substitua por seu SSID
-const char* password = "SUA_SENHA";  // Substitua pela sua senha
+const char* ssid = "INTELBRAS - JOAO";  // Substitua por seu SSID
+const char* password = "jps510123";  // Substitua pela sua senha
 
 WiFiServer server(80);  // Criação do servidor na porta 80
 
@@ -56,10 +56,10 @@ void loop() {
           } else {
             if (currentLine.startsWith("GET /1")) {
               digitalWrite(PIN, HIGH);
-              Serial.println("PINO 18 LIGADO");
+              Serial.println("PINO 2 LIGADO");
             } else if (currentLine.startsWith("GET /0")) {
               digitalWrite(PIN, LOW);
-              Serial.println("PINO 18 DESLIGADO");
+              Serial.println("PINO 2 DESLIGADO");
             }
             currentLine = "";
           }
