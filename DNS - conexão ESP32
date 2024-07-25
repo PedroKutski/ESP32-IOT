@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include <ESPmDNS.h>
+#include "FS.h"
 
 const char* ssid = "Seu_SSID";
 const char* password = "Sua_Senha";
