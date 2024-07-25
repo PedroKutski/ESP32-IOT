@@ -1,0 +1,32 @@
+#include <WiFi.h>
+#include <ESPmDNS.h>
+
+const char* ssid = "Seu_SSID";
+const char* password = "Sua_Senha";
+const char* hostname = "meu_esp32"; // nome desejado para o domínio local (meu_esp32.local)
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.begin(ssid, password);
+
+  // Aguarda a conexão com o Wi-Fi
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConectado ao Wi-Fi!");
+  Serial.print("Endereço IP: ");
+  Serial.println(WiFi.localIP());
+
+  // Inicia o mDNS
+  if (!MDNS.begin(hostname)) {
+    Serial.println("Erro ao configurar o mDNS!");
+    return;
+  }
+  Serial.println("mDNS configurado com sucesso!");
+}
+
+void loop() {
+  // Seu código principal
+}
