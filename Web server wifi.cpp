@@ -1,3 +1,5 @@
+//SERVIDOR WEB WIFI - FAZ A COMUNICAÇÃO VIA WIFI E CONTROLA A ESP32 PELA REDE WIFI
+
 #include <WiFi.h>  // Biblioteca para comunicação Wi-Fi
 
 #define PIN 2  // Definição do pino que será usado para controle
