@@ -1,3 +1,5 @@
+//SERVIDOR BLUETHOOTH - FAZ A COMUNICAÇÃO VIA BLUETHOOTH APENAS
+
 #include <BluetoothSerial.h>  // Biblioteca para comunicação Bluetooth
 
 #define PIN 18  // Definição do pino que será usado para controle
