@@ -1,3 +1,5 @@
+//PROTOCOLO DE COMUNICAÇÃO DE QUALQUER REDE COM BROKER PÚBLICO
+
 #include <WiFi.h>
 #include <PubSubClient.h>
 
