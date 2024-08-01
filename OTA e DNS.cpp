@@ -1,3 +1,5 @@
+//OTA E DNS PELA REDE WIFI WEB SERVER, O OTA FAZ A ATUALIZAÇÃO DA ESP32 E O DNS FACILITA O MEIO DE COMUNICAÇÃO WIFI
+
 #include <WiFi.h>
 #include <WebServer.h>
 #include <Update.h>
